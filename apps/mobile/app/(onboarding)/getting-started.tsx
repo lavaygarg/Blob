@@ -14,7 +14,7 @@ export default function GettingStartedScreen() {
             <View className="absolute h-44 w-44 rounded-full bg-orange-50 opacity-50" />
             <View className="h-36 w-36 items-center justify-center rounded-3xl bg-white shadow-2xl shadow-orange-200">
               <Image 
-                source={require('../../../assets/icon.png')} 
+                source={require('../../assets/icon.png')} 
                 className="h-28 w-28"
                 resizeMode="contain"
               />
