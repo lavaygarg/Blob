@@ -9,13 +9,10 @@ import { TRPCProvider } from '@/utils/TRPCProvider';
 
 export default function RootLayout() {
   const { colorScheme } = useColorScheme(); // nativewind hook
-
   return (
     <SafeAreaProvider>
       <TRPCProvider>
-        <StatusBar
-          barStyle={colorScheme === 'dark' ? 'light-content' : 'dark-content'}
-        />
+        <StatusBar barStyle={colorScheme === 'dark' ? 'light-content' : 'dark-content'} />
         <Slot />
       </TRPCProvider>
     </SafeAreaProvider>
