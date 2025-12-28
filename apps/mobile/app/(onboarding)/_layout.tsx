@@ -1,13 +1,14 @@
 import { Stack } from 'expo-router';
 import { View } from 'react-native';
 import { useColorScheme } from 'nativewind';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function OnboardingLayout() {
   const { colorScheme } = useColorScheme();
   const isDark = colorScheme === 'dark';
 
   return (
-    <View className="flex-1 bg-white dark:bg-black">
+    <SafeAreaView className="flex-1 bg-white dark:bg-black">
       <Stack
         screenOptions={{
           headerShown: true,
@@ -33,6 +34,6 @@ export default function OnboardingLayout() {
           }}
         />
       </Stack>
-    </View>
+    </SafeAreaView>
   );
 }
